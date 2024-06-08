@@ -30,12 +30,13 @@ The effectiveness of these models, with and without sentiment analysis, is compa
   ```python
   from huggingface_hub import notebook_login
   notebook_login()
+  ```
 
 ### IMDB Dataset Pre-training
  ```python
 from datasets import load_dataset
 imdb = load_dataset("imdb")
-
+```
 ### Model Performance Metrics
 #### Cross-Validation Scores:
 Accuracy, Recall, Precision, F1 Score, ROC_AUC.
@@ -50,17 +51,20 @@ rf_output = pd.DataFrame({
     'Testing': [test_cv_acc_rf, test_cv_recall_rf, test_cv_precision_rf, test_cv_f1_rf, roc_auc_test_rf]
 }, index=['Accuracy', 'Recall', 'Precision', 'F1', 'ROC_AUC'])
 print(rf_output)
-
+```
 
 ### Feature Importance Analysis
 #### Variable Importances for Random Forest and LightGBM:
+### Plot feature importance
+```python
 
 import matplotlib.pyplot as plt
-# Plot feature importance
+
 plt.barh(sorted_feature_names, sorted_feature_importances)
 plt.xlabel('Feature Importance')
 plt.title('Variable Importance for Random Forest')
 plt.show()
+```
 
 ## Next Steps
 Interpretation and comparison of model results to determine the efficacy of including sentiment analysis in predicting customer churn.
