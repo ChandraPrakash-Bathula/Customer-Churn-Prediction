@@ -32,4 +32,12 @@ The effectiveness of these models, with and without sentiment analysis, is compa
   from huggingface_hub import notebook_login
   notebook_login()
 
+### IMDB Dataset Pre-training
+from datasets import load_dataset
+imdb = load_dataset("imdb")
+
+### Model Performance Metrics
+#### Cross-Validation Scores:
+Accuracy, Recall, Precision, F1 Score, ROC_AUC.
+Random Forest Model Metrics:
 
