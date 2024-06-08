@@ -1,7 +1,6 @@
 # Customer-Churn-Prediction
  "Customer Churn Prediction: A Comparative Analysis of Models with and without Sentiment Analysis ":
 
-```markdown
 # Customer Churn Prediction: Comparative Analysis with Sentiment Analysis (Phase 2)
 
 ## Overview of the Study
@@ -32,45 +31,5 @@ The effectiveness of these models, with and without sentiment analysis, is compa
   ```python
   from huggingface_hub import notebook_login
   notebook_login()
-  ```
-- **IMDB Dataset Pre-training:**
-  ```python
-  from datasets import load_dataset
-  imdb = load_dataset("imdb")
-  ```
 
-### Model Performance Metrics
-- **Cross-Validation Scores:**
-  - Accuracy, Recall, Precision, F1 Score, ROC_AUC.
-- **Random Forest Model Metrics:**
-  ```python
-  import pandas as pd
-  # DataFrame setup
-  rf_output = pd.DataFrame({
-      'Training': [train_cv_acc_rf, train_cv_recall_rf, train_cv_precision_rf, train_cv_f1_rf, roc_auc_train_rf],
-      'Testing': [test_cv_acc_rf, test_cv_recall_rf, test_cv_precision_rf, test_cv_f1_rf, roc_auc_test_rf]
-  }, index=['Accuracy', 'Recall', 'Precision', 'F1', 'ROC_AUC'])
-  print(rf_output)
-  ```
-
-### Feature Importance Analysis
-- **Variable Importances for Random Forest and LightGBM:**
-  ```python
-  import matplotlib.pyplot as plt
-  # Plot feature importance
-  plt.barh(sorted_feature_names, sorted_feature_importances)
-  plt.xlabel('Feature Importance')
-  plt.title('Variable Importance for Random Forest')
-  plt.show()
-  ```
-
-### Next Steps
-- Interpretation and comparison of model results to determine the efficacy of including sentiment analysis in predicting customer churn.
-
-## Support
-Support our work by starring our GitHub repository.
-
-## Conclusion
-This phase of the study explores how incorporating customer sentiment analysis affects churn prediction accuracy across different models. The findings from this phase will guide future research directions and potential improvements in customer retention strategies.
-```
 
