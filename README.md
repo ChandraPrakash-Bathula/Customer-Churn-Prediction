@@ -1,7 +1,6 @@
 # Customer-Churn-Prediction
- "Customer Churn Prediction: A Comparative Analysis of Models with and without Sentiment Analysis ":
 
-# Customer Churn Prediction: Comparative Analysis with Sentiment Analysis (Phase 2)
+## Customer Churn Prediction: Comparative Analysis with Sentiment Analysis :
 
 ## Overview of the Study
 This research aims to evaluate the impact of sentiment analysis on predicting customer churn within the e-commerce sector using various predictive modeling techniques. The study particularly assesses which model most accurately predicts customer churn rates.
