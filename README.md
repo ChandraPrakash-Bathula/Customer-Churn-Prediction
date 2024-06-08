@@ -1,7 +1,8 @@
 # Customer-Churn-Prediction
+ "Customer Churn Prediction: A Comparative Analysis of Models with and without Sentiment Analysis ":
 
 ```markdown
-# Customer Churn Prediction: Comparative Analysis with Sentiment Analysis
+# Customer Churn Prediction: Comparative Analysis with Sentiment Analysis (Phase 2)
 
 ## Overview of the Study
 This research aims to evaluate the impact of sentiment analysis on predicting customer churn within the e-commerce sector using various predictive modeling techniques. The study particularly assesses which model most accurately predicts customer churn rates.
@@ -73,4 +74,3 @@ Support our work by starring our GitHub repository.
 This phase of the study explores how incorporating customer sentiment analysis affects churn prediction accuracy across different models. The findings from this phase will guide future research directions and potential improvements in customer retention strategies.
 ```
 
-This README provides a concise overview of the project, describes the processes involved, outlines the improvements made in the current phase, and presents the future steps. It is formatted to be clear and accessible for other researchers or stakeholders who might review the project on platforms like GitHub.
